@@ -3,50 +3,43 @@
 
 {% block style %}
   <style>
-    body {
-      font-family: "Poppins", sans-serif;
-    }
-
-    .background-container {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background-image: url({% static "img/background.jpg" %});
-      background-size: cover;
-      background-position: center;
-      filter: blur(0px);
-      z-index: -1;
+    .text-gradient-darkorange {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(to right, #0055ff, #ff4500);
     }
   </style>
 {% endblock style %}
 
 {% block content %}
-    <div class="background-container"></div>
+<section id="inicio" class="bg-cover bg-[-520px] lg:bg-center bg-no-repeat h-[75vh] relative" style="background-image: url({% static "img/vecteezy_blue-orange-and-white-modern-curve-background_7718271.jpg" %});">
 
-    <div class="container mx-auto py-1 flex items-center mt-16">
-      <div class="flex-1">
-        <h1 class="text-5xl font-bold text-blue-900">
+  <div class="py-24 container-slider-home flex lg:justify-between md:justify-between justify-center lg:flex-row md:flex-row flex-col gap-8 lg:p-24 md:px-8 md:pr-16 items-center max-w-screen-2xl mx-auto h-full relative">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      
+      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+
+        <h1 class="my-4 text-5xl font-bold leading-tight text-gradient-darkorange">
           Produtividade sem limites!
         </h1>
-        <h2 class="mt-4 text-blue-900 text-2xl">
-          Com a fibra nippontec sua empresa vai além!
-        </h2>
-        <button
-          class="text-2xl mt-8 font-extralight border-2 rounded-md border-blue-300 hover:bg-blue-500 hover:text-white transition duration-300 px-4 py-2 text-3xl"
-        >
-          Assine já
-        </button>
+      
 
-        <button
-          class="text-2xl mt-4 font-extralight border-2 rounded-md border-blue-300 hover:bg-blue-500 hover:text-white transition duration-300 px-4 py-2 text-3xl"
-        >
-          Mais detalhes
+        <p class="text-2xl mb-8 text-blue-800">
+          Com a fibra nippontec sua empresa vai além!
+        </p>
+
+        <button class="mx-auto lg:mx-0 hover:underline bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          Conheça nossos planos
         </button>
       </div>
 
-      <div class="flex-1 text-right">
-        <img src="{% static 'img/modelo.png' %}" />
+      <div class="w-full md:w-3/5 py-6 text-center">
+        <img class="w-full z-50" src="{% static 'img/modelo.png' %}" />
       </div>
     </div>
+  </div>
+</section>
+
 
 {% endblock content %}
