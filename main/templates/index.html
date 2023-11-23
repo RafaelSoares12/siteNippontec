@@ -13,33 +13,9 @@
 {% endblock style %}
 
 {% block content %}
-<section id="inicio" class="bg-cover bg-[-520px] lg:bg-center bg-no-repeat h-[75vh] relative" style="background-image: url({% static "img/vecteezy_blue-orange-and-white-modern-curve-background_7718271.jpg" %});">
 
-  <div class="py-24 container-slider-home flex lg:justify-between md:justify-between justify-center lg:flex-row md:flex-row flex-col gap-8 lg:p-24 md:px-8 md:pr-16 items-center max-w-screen-2xl mx-auto h-full relative">
-    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-      
-      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+{% include "includes/hero-section.html" %}
 
-        <h1 class="my-4 text-5xl font-bold leading-tight text-gradient-darkorange">
-          Produtividade sem limites!
-        </h1>
-      
-
-        <p class="text-2xl mb-8 text-blue-800">
-          Com a fibra nippontec sua empresa vai além!
-        </p>
-
-        <button class="mx-auto lg:mx-0 hover:underline bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-          Conheça nossos planos
-        </button>
-      </div>
-
-      <div class="w-full md:w-3/5 py-6 text-center">
-        <img class="w-full z-50" src="{% static 'img/modelo.png' %}" />
-      </div>
-    </div>
-  </div>
-</section>
-
+{% include "includes/planos-section.html" %}
 
 {% endblock content %}
