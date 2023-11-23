@@ -1,1 +1,3 @@
 from main.views.IndexTemplateView import IndexTemplateView
+from main.views.ContatoTemplateView import ContatoTemplateView
+from main.views.ContratoTemplateView import ContratoTemplateView
