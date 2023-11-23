@@ -20,43 +20,44 @@
 
 <div class="background-container"></div>
 
-    <div class="container mx-auto mt-8 mb-80">
-        <h1 class="text-5xl font-bold mb-4 text-blue-700">Contratos</h1>
-        <p class="text-gray-700 text-lg mb-4 text-blue-700">
-            Abaixo disponibilizamos nossos contratos, de prestação de serviços e comodato de equipamentos.
-        </p>
-   
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<section class="relative z-10 overflow-hidden lg:py-[80px]">
+<div class="container mx-auto mb-60">
+    <h1 class="text-5xl font-bold mb-4 text-blue-700">Contratos</h1>
+    <p class="text-gray-700 text-lg mb-12 mt-8 text-blue-700">
+        Abaixo disponibilizamos nossos contratos, de prestação de serviços e comodato de equipamentos.
+    </p>
 
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold mb-2">Contrato de Serviço</h2>
-                <div class="flex justify-between items-center mt-4">
-                    <a href="#" class="text-blue-500 flex items-center">
-                        <i class="fas fa-eye mr-2"></i>
-                        Ver Contrato
-                    </a>
-                    <a href="#" class="text-blue-500 flex items-center">
-                        <i class="fas fa-download mr-2"></i>
-                        Baixar Contrato
-                    </a>
-                </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <div class="bg-blue-700 p-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
+            <h2 class="text-white text-2xl font-semibold mb-2"><i class="fa-regular fa-file-pdf"></i> Contrato de Serviço</h2>
+            <div class="flex justify-between items-center mt-4">
+                <a href="#" class="text-white flex items-center">
+                    <i class="fas fa-eye mr-2"></i>
+                    Ver Contrato
+                </a>
+                <a href="#" class="text-white flex items-center">
+                    <i class="fas fa-download mr-2"></i>
+                    Baixar Contrato
+                </a>
             </div>
-    
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold mb-2">Contrato de Comodato</h2>
-                <div class="flex justify-between items-center mt-4">
-                    <a href="#" class="text-blue-500 flex items-center">
-                        <i class="fas fa-eye mr-2"></i>
-                        Ver Contrato
-                    </a>
-                    <a href="#" class="text-blue-500 flex items-center">
-                        <i class="fas fa-download mr-2"></i>
-                        Baixar Contrato
-                    </a>
-                </div>
+        </div>
+
+        <div class="bg-blue-700 p-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
+            <h2 class="text-2xl font-semibold mb-2 text-white"><i class="fa-regular fa-file-pdf"></i> Contrato de Comodato</h2>
+            <div class="flex justify-between items-center mt-4">
+                <a href="#" class="text-white flex items-center">
+                    <i class="fas fa-eye mr-2"></i>
+                    Ver Contrato
+                </a>
+                <a href="#" class="text-white flex items-center">
+                    <i class="fas fa-download mr-2"></i>
+                    Baixar Contrato
+                </a>
             </div>
         </div>
     </div>
-            
-    
+</div>
+</section>
+
 {% endblock content %}
