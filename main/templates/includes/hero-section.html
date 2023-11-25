@@ -1,21 +1,23 @@
 {% load static %}
 
-<section id="inicio" class="bg-cover bg-no-repeat h-screen overflow-hidden relative" style="background-image: url({% static "img/background-main.jpg" %});">
-  <div class="container mx-auto flex flex-col md:flex-row items-center justify-center h-full md:mt-0 mt-0">
-      <div class="md:w-2/5 md:h-2/4 text-center md:text-left">
-          <div class="lg:ml-12">
-              <h1 class="my-4 text-4xl md:text-7xl font-bold leading-tight text-gradient-darkorange">
-                  Produtividade sem limites!
-              </h1>
-              <p class="text-xl md:text-2xl mb-8 text-blue-800">
-                  Com a fibra nippontec, sua empresa vai além!
-              </p>
-              <a id="btn-saiba-mais" href="#planos" class="mx-auto btn-get-started bg-orange-500 text-white px-4 md:px-6 py-2 rounded-full shadow-md border border-orange-900 hover:bg-orange-700 hover:text-white font-bold text-base md:text-lg transition duration-300 ease-in-out" style="font-size: 1rem;">Conheça nossos planos</a>
-          </div>
+<section id="inicio" class="bg-cover bg-no-repeat h-screen overflow-hidden relative" style="background-image: url({{inicio.backgroundImage.url}});">
+    
+    <div class="container mx-auto flex flex-col md:flex-row items-center md:justify-center h-full md:mt-0 mt-24 md:ml-16">
+      <div class="md:w-2/5 md:h-2/4 text-center md:text-left lg:ml-12">
+        <h1 class="my-4 text-4xl md:text-7xl font-bold leading-tight text-gradient-darkorange">
+          {{inicio.title}}
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-blue-800">
+            {{inicio.subtitle}}
+        </p>
+        <a id="btn-saiba-mais" href="{{inicio.buttonLink}}" class="mx-auto btn-get-started bg-orange-500 text-white px-4 md:px-6 py-2 rounded-full shadow-md border border-orange-900 hover:bg-orange-700 hover:text-white font-bold text-base md:text-lg transition duration-300 ease-in-out">
+          {{inicio.buttonText}}
+        </a>
       </div>
-      <div class="md:w-3/5 py-6 text-center">
-          <img class="lg:ml-0 md:ml-12 md:w-full z-50" src="{% static 'img/modelo.png' %}" />
+      <div class="md:w-3/5 md:py-10 py-32">
+        <img class="lg:ml-0 md:ml-12 md:w-full z-50" src="{{inicio.image.url}}"/>
       </div>
-  </div>
+    </div>
+    
 </section>
-
+  
