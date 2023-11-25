@@ -1,11 +1,11 @@
 from django.contrib import admin
 
-from main.models import Contrato, RedesSociais
+from main.models import Contrato, RedeSocial
 
 @admin.register(Contrato)
 class ContratoAdmin(admin.ModelAdmin):
     ...
 
-@admin.register(RedesSociais)
+@admin.register(RedeSocial)
 class RedesSociaisAdmin(admin.ModelAdmin):
    ...    
