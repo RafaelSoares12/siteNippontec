@@ -1,3 +1,11 @@
 from django.contrib import admin
 
-# Register your models here.
+from main.models import Contrato, RedesSociais
+
+@admin.register(Contrato)
+class ContratoAdmin(admin.ModelAdmin):
+    ...
+
+@admin.register(RedesSociais)
+class RedesSociaisAdmin(admin.ModelAdmin):
+   ...    
