@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from main.models import Contrato, InicioSection, RedeSocial
+from main.models import Contato, Contrato, InicioSection, RedeSocial
 
 @admin.register(InicioSection)
 class InicioSectionAdmin(admin.ModelAdmin):
@@ -14,3 +14,6 @@ class ContratoAdmin(admin.ModelAdmin):
 class RedesSociaisAdmin(admin.ModelAdmin):
    ...    
 
+@admin.register(Contato)
+class ContatoAdmin(admin.ModelAdmin):
+   ...    

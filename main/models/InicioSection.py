@@ -9,7 +9,7 @@ class InicioSection(models.Model):
     image = models.ImageField('Imagem modelo' ,upload_to='inicioImages/')
     
     def __str__(self):
-        return self.title
+        return 'Seção Início'
     
     class Meta:
         verbose_name = "Seção Início"

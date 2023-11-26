@@ -1,0 +1,13 @@
+{% if messages %}
+    {% for mensagem in messages %}
+        {% if mensagem.tags == 'error' %}
+            <p class="p-3 rounded bg-red-500 text-white" role="alert">
+                {{ mensagem }}
+            </p>
+        {% else %}
+            <p class="p-3 rounded bg-green-500 text-white" role="alert">
+                {{ mensagem }}
+            </p>
+        {% endif %}
+    {% endfor %}
+{% endif %}
