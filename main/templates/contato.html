@@ -17,32 +17,24 @@
 {% endblock style %}
 
 {% block content %}
-
 <div class="background-container"></div>
 
 <section class="relative z-10 overflow-hidden lg:py-[80px]">
    <div class="container mx-auto">
-      <div class="flex flex-wrap mx-16 lg:justify-between">
-         <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
+      <div class="flex flex-wrap lg:justify-between">
+         <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
             <div class="mb-12 max-w-[570px] lg:mb-0">
-               
-               <span class="text-blue-900 block mb-4 text-base font-semibold text-primary">
+               <span class="text-blue-900 block mb-4 text-base font-semibold text-primary mt-2">
                Fale conosco
                </span>
-               <h2
-                  class="text-blue-600 mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
-                  >
+               <h2 class="text-blue-600 mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   {{contato.tituloPrincipal}}
                </h2>
-               <p
-                  class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9"
-                  >
+               <p class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9">
                   {{contato.mensagem}}
                </p>
-               <div class="mb-8 flex w-full max-w-[370px]">
-                  <div
-                     class="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]"
-                     >
+               <div class="mb-4 flex flex-col lg:flex-row w-full max-w-[370px] mt-10">
+                  <div class="bg-primary/5 text-primary mb-4 lg:mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                      <i class="fa-solid fa-location-dot fa-2xl"></i>
                   </div>
                   <div class="w-full">
@@ -54,12 +46,9 @@
                      </p>
                   </div>
                </div>
-               <div class="mb-8 flex w-full max-w-[370px]">
-                  <div
-                     class="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]"
-                     >
+               <div class="mb-4 flex flex-col lg:flex-row w-full max-w-[370px]">
+                  <div class="bg-primary/5 text-primary mb-4 lg:mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                      <i class="fa-solid fa-phone-volume fa-2xl"></i>
-
                   </div>
                   <div class="w-full">
                      <h4 class="mb-1 text-xl font-bold text-dark">
@@ -70,10 +59,8 @@
                      </p>
                   </div>
                </div>
-               <div class="mb-8 flex w-full max-w-[370px]">
-                  <div
-                     class="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]"
-                     >
+               <div class="mb-4 flex flex-col lg:flex-row w-full max-w-[370px]">
+                  <div class="bg-primary/5 text-primary mb-4 lg:mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                      <i class="fa-solid fa-envelope fa-2xl"></i>
                   </div>
                   <div class="w-full">
@@ -87,36 +74,32 @@
                </div>
             </div>
          </div>
-         <div class="mt-10 w-full px-4 lg:w-1/2 xl:w-5/12">
-            
-            <div class="md:col-span-1 bg-white p-6 rounded-lg shadow-md mb-4">
-                <form method="POST" action="{% url 'main:enviar-mensagem' %}">
+         <div class="w-full lg:w-1/2 xl:w-5/12 mt-10 px-4">
+            <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+               <form method="POST" action="{% url 'main:enviar-mensagem' %}">
                   {% csrf_token %}
-                    <div class="mb-4">
-                        <label for="nome" class="block text-sm font-medium text-gray-700">Nome:</label>
-                        {{contatoForm.nome}}
-                     </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-sm font-medium text-gray-700">E-mail:</label>
-                        {{contatoForm.email}}
-                    </div>
-                    <div class="mb-4">
-                        <label for="assunto" class="block text-sm font-medium text-gray-700">Assunto:</label>
-                        {{contatoForm.assunto}}
-                    </div>
-                    <div class="mb-4">
-                        <label for="mensagem" class="block text-sm font-medium text-gray-700">Mensagem:</label>
-                        {{contatoForm.mensagem}}
-                     </div>
-                    <button type="submit" class="bg-blue-700 text-white py-2 px-4 rounded-full">Enviar Mensagem</button>
-                </form>
+                  <div class="mb-4">
+                     <label for="nome" class="block text-sm font-medium text-gray-700">Nome:</label>
+                     {{contatoForm.nome}}
+                  </div>
+                  <div class="mb-4">
+                     <label for="email" class="block text-sm font-medium text-gray-700">E-mail:</label>
+                     {{contatoForm.email}}
+                  </div>
+                  <div class="mb-4">
+                     <label for="assunto" class="block text-sm font-medium text-gray-700">Assunto:</label>
+                     {{contatoForm.assunto}}
+                  </div>
+                  <div class="mb-4">
+                     <label for="mensagem" class="block text-sm font-medium text-gray-700">Mensagem:</label>
+                     {{contatoForm.mensagem}}
+                  </div>
+                  <button type="submit" class="bg-blue-700 text-white py-2 px-4 rounded-full">Enviar Mensagem</button>
+               </form>
             </div>
-
             {% include "includes/messages.html" %}
-
          </div>
       </div>
    </div>
-</section>  
-
+</section>
 {% endblock content %}
