@@ -22,8 +22,8 @@
 
 <section class="relative z-10 overflow-hidden lg:py-[80px] flex flex-col min-h-screen">
 <div class="container mx-auto ml-5% mr-5% p-10">
-    <h1 class="text-5xl font-bold mb-4 text-blue-700">Contratos</h1>
-    <p class="text-gray-700 text-lg mb-10 mt-8 text-blue-700">
+    <h1 class="text-5xl font-bold mb-4" style="color: #1a2744;">Contratos</h1>
+    <p class="text-lg mb-10 mt-8" style="color: #1a2744;">
         Abaixo disponibilizamos nossos contratos, de prestação de serviços e comodato de equipamentos.
     </p>
 
@@ -31,7 +31,7 @@
 
         {% for contrato in contratos %}
 
-            <div class="bg-blue-700 p-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
+            <div class="p-6 rounded-lg shadow-md transition-transform transform hover:scale-105" style="background-color: #1a2744;">
                 <h2 class="text-white text-2xl font-semibold mb-2"><i class="fa-regular fa-file-pdf"></i> {{contrato.nome}}</h2>
                 <div class="flex justify-between items-center mt-4">
                     <a target="_blank" href="{{contrato.documento.url}}" class="text-white flex items-center">

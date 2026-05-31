@@ -11,7 +11,7 @@ class EnviarMensagemView(FormView):
     success_url = reverse_lazy('main:contatos')
 
     def form_valid(self, form):
-        assunto = f'Site Nippontec - {form.cleaned_data["assunto"]}'
+        assunto = f'Site NVCO Solutions - {form.cleaned_data["assunto"]}'
         mensagem = f"De: {form.cleaned_data['nome']} ({form.cleaned_data['email']})\n\n{form.cleaned_data['mensagem']}"
 
         try:

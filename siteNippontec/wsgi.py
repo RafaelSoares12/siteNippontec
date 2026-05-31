@@ -1,5 +1,5 @@
 """
-WSGI config for siteNippontec project.
+WSGI config for NVCO project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

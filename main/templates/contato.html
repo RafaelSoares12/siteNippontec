@@ -24,10 +24,10 @@
       <div class="flex flex-wrap lg:justify-between">
          <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
             <div class="mb-12 max-w-[570px] lg:mb-0">
-               <span class="text-blue-900 block mb-4 text-base font-semibold text-primary mt-10 md:mt-0">
+               <span class="block mb-4 text-base font-semibold mt-10 md:mt-0" style="color: #f97316;">
                Fale conosco
                </span>
-               <h2 class="text-blue-600 mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+               <h2 class="mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]" style="color: #1a2744;">
                   {{contato.tituloPrincipal}}
                </h2>
                <p class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9">
@@ -96,7 +96,7 @@
                      <label for="mensagem" class="block text-sm font-medium text-gray-700">Mensagem:</label>
                      {{contatoForm.mensagem}}
                   </div>
-                  <button type="submit" class="bg-blue-700 text-white py-2 px-4 rounded-full">Enviar Mensagem</button>
+                  <button type="submit" class="text-white py-2 px-6 rounded-full font-semibold transition duration-200 hover:opacity-90" style="background-color: #f97316;">Enviar Mensagem</button>
                </form>
             </div>
             {% include "includes/messages.html" %}
