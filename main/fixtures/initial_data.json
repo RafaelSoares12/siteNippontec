@@ -1,0 +1,68 @@
+[
+{
+  "model": "main.contrato",
+  "pk": 1,
+  "fields": {
+    "nome": "Contrato de Comodato de Equipamentos",
+    "documento": "contratos/background-main.jpg"
+  }
+},
+{
+  "model": "main.contrato",
+  "pk": 2,
+  "fields": {
+    "nome": "Contrato de Prestação de Serviço de Telecomunicações",
+    "documento": "contratos/background-main_kvyMsWi.jpg"
+  }
+},
+{
+  "model": "main.redesocial",
+  "pk": 1,
+  "fields": {
+    "nome": "Instagram",
+    "link": "https://www.instagram.com/nippontecnet/",
+    "icone": "<i class=\"fa-brands fa-instagram fa-2xl\" style=\"color: #ffffff;\"></i>"
+  }
+},
+{
+  "model": "main.redesocial",
+  "pk": 2,
+  "fields": {
+    "nome": "Whatsapp",
+    "link": "https://api.whatsapp.com/send?phone=559921411100",
+    "icone": "<i class=\"fa-brands fa-whatsapp fa-2xl\" style=\"color: #ffffff;\"></i>"
+  }
+},
+{
+  "model": "main.redesocial",
+  "pk": 3,
+  "fields": {
+    "nome": "Linkedin",
+    "link": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjUtaT0p9-CAxUOppUCHTs_AwQQFnoECAgQAQ&url=https%3A%2F%2Fbr.linkedin.com%2Fcompany%2Fnippontec&usg=AOvVaw1LyBZR5i",
+    "icone": "<i class=\"fa-brands fa-linkedin fa-2xl\" style=\"color: #ffffff;\"></i>"
+  }
+},
+{
+  "model": "main.iniciosection",
+  "pk": 1,
+  "fields": {
+    "title": "Produtividade sem limites!",
+    "subtitle": "Com a fibra NVCO, sua empresa vai além!",
+    "buttonText": "Fale conosco",
+    "buttonLink": "/contatos/",
+    "backgroundImage": "inicioBackgrounds/background-main.jpg",
+    "image": "inicioImages/modelo.png"
+  }
+},
+{
+  "model": "main.contato",
+  "pk": 1,
+  "fields": {
+    "tituloPrincipal": "Como podemos ajudar?",
+    "mensagem": "Preencha o formulário que estaremos entrando em contato via email.",
+    "endereco": "R. Bom Jesus - Centro, Balsas - MA, 65800-000",
+    "telefone": "(99) 2141-1100",
+    "email": "nippontec@gmail.com"
+  }
+}
+]
