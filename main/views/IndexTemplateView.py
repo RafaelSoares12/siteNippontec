@@ -7,6 +7,6 @@ class IndexTemplateView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["inicio"] = InicioSection.objects.get(id=1)
+        context["inicio"] = InicioSection.objects.first()
         context["redesSociais"] = RedeSocial.objects.all()
         return context

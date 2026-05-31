@@ -9,6 +9,6 @@ class ContatoTemplateView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['contatoForm'] = ContatoForm()
-        context["contato"] = Contato.objects.get(id=1)
+        context["contato"] = Contato.objects.first()
         context["redesSociais"] = RedeSocial.objects.all()
         return context
